@@ -9,3 +9,6 @@
 - For all the questions answered correctly at a given point in game, bonus stages will be unlocked that’ll grant unique collectibles.
 - Answering 5 questions incorrectly in a row will unlock GoldenDuck achievement.	
 - In 10 stages of increasing difficulty, one who survives till the end will be declared winner.
+
+
+![Stage Design](Stage1.png).
