@@ -3,6 +3,7 @@ class Wizard:
     def wizardconversationpass(self):
         choice=''
         stg1=StageOne()
+        clear=0
         choice=stg1.stageOneIntro()   #Introduction to stage 1
         if choice.lower().strip()=='c':
             choice=stg1.correctAnswerStage1()   #Correct Answer 1 Scene
@@ -13,7 +14,8 @@ class Wizard:
                 if choice.lower().strip()=='b':
                     choice=stg1.ogreAttackIntro()   #ogre attack
                     if choice.lower().strip()=='a':
-                        stg1.ogreAttackScene1()    #choice 1 ogre attack
+                        stg1.ogreAttackScene1()
+                        clear+=1    #choice 1 ogre attack
                     else:
                         stg1.ogreAttackScene2()  #choice 2 ogre attack
                 else:
@@ -26,5 +28,5 @@ class Wizard:
                 stg1.invalidChoice()   
         else: 
             stg1.incorrectAnswerStage1()     #incorrect answer question from wizard
-    
+        return clear
         
